@@ -11,7 +11,9 @@ function print(text) {
  */
 function isValid(name) {
   // ваш код...
+  return name != null && name.length > 3 && !name.includes(' ');
 }
+
 
 function sayHello() {
   let userName = prompt('Введите ваше имя');
@@ -22,3 +24,4 @@ function sayHello() {
     print('Некорректное имя');
   }
 }
+sayHello()
